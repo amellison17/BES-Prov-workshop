@@ -15,7 +15,7 @@ is.installed <- function(pkglist){
 source("provSummarizeR.R") #newer version of provSummarizeR (5-Dec-2019) to capture console prov
 
 CRANlist <- c("rdtLite", "devtools", "provParseR", "provSummarizeR", "provViz") #packages on CRAN
-GITlist <- c("provGraphR", "provDebugR", "provExplainR", "provClean") #packages on github
+GITlist <- c("provGraphR", "provDebugR", "provExplainR") #packages on github
 
 #(Install) and load libraries available on CRAN
 for(i in 1:length(CRANlist)) {
@@ -30,10 +30,13 @@ for(i in 1:length(GITlist)) {
 	if(!is.installed(GITlist[i])){
 		devtools::install_github(paste("End-to-end-provenance/",GITlist[i], sep=""), quiet=TRUE)
 	}
+	require(GITlist[i], character.only=TRUE)
 }
 
-#Load GitHub libraries and Rclean (because provClean is not a library)
-for(i in 1:(length(GITlist)-1)){require(GITlist[i], character.only=TRUE)}
-require(Rclean)
+if(!is.installed("provClean")){
+	devtools::install_github("End-to-end-provenance/provClean", ref="dev", quiet=TRUE)
+}
+require(provClean)
+
 
 

@@ -29,7 +29,7 @@ BioBreak
 
 4. Recap & Questions
 5. Generating provenance and using provenance-based tools using <https://end-to-end-provenance.github.io>
-    1. ***rdtLite*** collects basic provenance of an R script (or console session) and saves to `prov.json'
+    1. ***rdtLite*** collects basic provenance of an R script (or console session) and saves to `prov.json`
         1. ***provParseR*** parses the `prov.json` into an R object for use by other prov-routines. Required by *provSummarizeR, provExplainR, provDebugR,* and *provClean*.
         2. *provGraphR* creates an adjacency matrix from the provenance object created by *provParseR* to allow for its rapid processing and use. Required by *provDebugR* and *provClean*.
     2. ***provSummarizeR*** creates a concise summary of the computing environment and "coarse-grained" provenance collected by *rdtLite*. This includes:
@@ -44,6 +44,6 @@ BioBreak
     5. *provExplainR* uses provenance collected on two different executions of a single script and explains why the results differ.
     6. *provClean* uses provenance to simplify a script.
 6. Hands-on work
-    1. /src/example_1.R
+    1. `/src/example_1.R`
     
 

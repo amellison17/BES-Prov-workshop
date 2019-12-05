@@ -9,4 +9,4 @@ If your bringing a laptop (helpful, but not required), please ensure that your s
 * Update all packages: (`update.packages(checkBuilt=TRUE, ask=FALSE)
 * Install R package rdtLite and its dependencies (`install.packages("rdtLite", dependencies=TRUE)`
 * Install R packages `provGraphR`, `provDebugR`, `provExplainR`, and `provClean` from Github: `devtools::install_github("End-to-end-provenance/<name-of-package>"` where `<name-of-package>` is each of these packages. Note that you must have already installed the R `devtools` package for this to work.
-*If you don't have Java on your computer, please install it. Java can be downloaded here: `https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html`. Note that you have to "Accept the license agreement" and create an Oracle account before you can download Java
+* If you don't have Java on your computer, please install it. Java can be downloaded here: `https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html`. Note that you have to "Accept the license agreement" and create an Oracle account before you can download Java

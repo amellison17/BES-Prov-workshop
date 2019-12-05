@@ -1,0 +1,10 @@
+library(rdtLite)
+library(provSummarizeR)
+
+prov.init(prov.dir="prov/" )
+a <- 1
+b<- 2
+ab <- a+b
+prov.quit()
+
+prov.summarize()

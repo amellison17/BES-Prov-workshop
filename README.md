@@ -42,8 +42,9 @@ BioBreak
     3. ***provViz*** is an R interface to a Java-based visualization tool to view and query the provenance graph. Requires Java.
     4. *provDebugR* is a "time-travelling" debugger that allows for rapid testing and debugging of R scripts.
     5. *provExplainR* uses provenance collected on two different executions of a single script and explains why the results differ.
-    6. *provClean* uses provenance to simplify a script.
+    6. *Rclean* (the library installed from `provClean`) uses provenance to simplify a script.
 6. Hands-on work
-    1. `/src/example_1.R`
+    1. `libsource.R` sets up clean work space, installs packages, loads libraries
+    2. `/src/example_1.R` is a first example using R's "cars" data to illustrate the simplicity and complexity of provenance
     
-
+BioBreak

@@ -15,8 +15,11 @@ If your bringing a laptop (helpful, but not required), please ensure that your s
 * Download and install the current version of R from `https:\\www.r-project.org\`. For the 10 December 2019 workshop, the current version is 3.6.1. 
 * Download and install the current version of RStudio from `https:\\rstudio.com\`. For the 10 December 2019 workshop, the current version is 1.2.5019. (I note that on one of my desktops, that 1.2.5019 does not work. But 1.1463 does).
 * Update all packages: (`update.packages(checkBuilt=TRUE, ask=FALSE)
-* Install R package rdtLite and its dependencies (`install.packages("rdtLite", dependencies=TRUE)`
-* Install R packages `provGraphR`, `provDebugR`, `provExplainR`, and `provClean` from Github: `devtools::install_github("End-to-end-provenance/<name-of-package>"` where `<name-of-package>` is each of these packages. Note that you must have already installed the R `devtools` package for this to work.
+* Install R packages
+    * This can be done by executing the script `\src\libsource.R` on this repo, or by the following steps:
+        * Install R package rdtLite and its dependencies (`install.packages("rdtLite", dependencies=TRUE)`
+        * Install R packages `provGraphR`, `provDebugR`, `provExplainR`, from GitHub: `devtools::install_github("End-to-end-provenance/<name-of-package>"` where `<name-of-package>` is each of these packages. Note that you must have already installed the R `devtools` package for this to work.
+        * Install R package `provClean` from a development branch on GitHub `devtools::install_github("End-to-end-provenance/provClean", ref="dev")`
 * If you don't have Java on your computer, please install it. Java can be downloaded here: `https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html`. Note that you have to "Accept the license agreement" and create an Oracle account before you can download Java
 
 ##Agenda
@@ -42,7 +45,7 @@ BioBreak
     3. ***provViz*** is an R interface to a Java-based visualization tool to view and query the provenance graph. Requires Java.
     4. *provDebugR* is a "time-travelling" debugger that allows for rapid testing and debugging of R scripts.
     5. *provExplainR* uses provenance collected on two different executions of a single script and explains why the results differ.
-    6. *Rclean* (the library installed from `provClean`) uses provenance to simplify a script.
+    6. *provClean* (*alpha* development version) uses provenance to simplify a script.
 6. Hands-on work
     1. `libsource.R` sets up clean work space, installs packages, loads libraries
     2. `/src/example_1.R` is a first example using R's "cars" data to illustrate the simplicity and complexity of provenance

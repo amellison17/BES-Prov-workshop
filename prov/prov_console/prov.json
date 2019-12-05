@@ -16,7 +16,7 @@
 		"rdt:p1": {
 			"rdt:name": "Console",
 			"rdt:type": "Start",
-			"rdt:elapsedTime": "0.24",
+			"rdt:elapsedTime": "0.74",
 			"rdt:scriptNum": "NA",
 			"rdt:startLine": "NA",
 			"rdt:startCol": "NA",
@@ -26,7 +26,7 @@
 		"rdt:p2": {
 			"rdt:name": "data(mtcars)",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.2",
+			"rdt:elapsedTime": "0.07",
 			"rdt:scriptNum": -1,
 			"rdt:startLine": -1,
 			"rdt:startCol": -1,
@@ -36,7 +36,7 @@
 		"rdt:p3": {
 			"rdt:name": "allCars.df <- mtcars",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.05",
+			"rdt:elapsedTime": "0.13",
 			"rdt:scriptNum": -1,
 			"rdt:startLine": -1,
 			"rdt:startCol": -1,
@@ -46,7 +46,7 @@
 		"rdt:p4": {
 			"rdt:name": "cars4Cyl.df <- allCars.df[allCars.df$cyl == 4, ]",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.03",
+			"rdt:elapsedTime": "0.02",
 			"rdt:scriptNum": -1,
 			"rdt:startLine": -1,
 			"rdt:startCol": -1,
@@ -56,7 +56,7 @@
 		"rdt:p5": {
 			"rdt:name": "cars6Cyl.df <- allCars.df[allCars.df$cyl == 6, ]",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.02",
+			"rdt:elapsedTime": "0.01",
 			"rdt:scriptNum": -1,
 			"rdt:startLine": -1,
 			"rdt:startCol": -1,
@@ -66,7 +66,7 @@
 		"rdt:p6": {
 			"rdt:name": "cars8Cyl.df <- allCars.df[allCars.df$cyl == 8, ]",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.01",
+			"rdt:elapsedTime": "0.02",
 			"rdt:scriptNum": -1,
 			"rdt:startLine": -1,
 			"rdt:startCol": -1,
@@ -86,7 +86,7 @@
 		"rdt:p8": {
 			"rdt:name": "mpg = c(mean(cars4Cyl.df$mpg), mean(cars6Cyl.df$mpg), mean(c",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.01",
+			"rdt:elapsedTime": "0.02",
 			"rdt:scriptNum": -1,
 			"rdt:startLine": -1,
 			"rdt:startCol": -1,
@@ -96,7 +96,7 @@
 		"rdt:p9": {
 			"rdt:name": "cyl.vs.mpg.df <- data.frame(cylinders, mpg)",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.01",
+			"rdt:elapsedTime": "0.0",
 			"rdt:scriptNum": -1,
 			"rdt:startLine": -1,
 			"rdt:startCol": -1,
@@ -106,7 +106,7 @@
 		"rdt:p10": {
 			"rdt:name": "plot(cylinders, mpg)",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.04",
+			"rdt:elapsedTime": "0.08",
 			"rdt:scriptNum": -1,
 			"rdt:startLine": -1,
 			"rdt:startCol": -1,
@@ -116,7 +116,7 @@
 		"rdt:p11": {
 			"rdt:name": "Console",
 			"rdt:type": "Finish",
-			"rdt:elapsedTime": "0.08",
+			"rdt:elapsedTime": "0.02",
 			"rdt:scriptNum": "NA",
 			"rdt:startLine": "NA",
 			"rdt:startCol": "NA",
@@ -134,7 +134,7 @@
 			"rdt:scope": "undefined",
 			"rdt:fromEnv": false,
 			"rdt:hash": "38e8626002451387c9736b180aa0dfde",
-			"rdt:timestamp": "2019-12-05T10.55.32EST",
+			"rdt:timestamp": "2019-12-05T17.45.35EST",
 			"rdt:location": "C:/Users/aellison/Documents/R/win-library/3.6/ggplot2/data/Rdata.rds"
 		},
 		"rdt:d2": {
@@ -145,7 +145,7 @@
 			"rdt:scope": "undefined",
 			"rdt:fromEnv": false,
 			"rdt:hash": "8c786a8197c854c598fb156aadf24546",
-			"rdt:timestamp": "2019-12-05T10.55.32EST",
+			"rdt:timestamp": "2019-12-05T17.45.35EST",
 			"rdt:location": "C:/Program Files/R/R-3.6.1/library/datasets/data/Rdata.rds"
 		},
 		"rdt:d3": {
@@ -254,9 +254,9 @@
 			"rdt:type": "File",
 			"rdt:scope": "undefined",
 			"rdt:fromEnv": false,
-			"rdt:hash": "8c105097fe56d1e497362fb06fb636dc",
-			"rdt:timestamp": "2019-12-05T10.55.40EST",
-			"rdt:location": "C:/Users/aellison/Dropbox (Harvard - FAS)/aaron's briefcase/16 - MEE/BES meetings/2019/2019 BES Workshop/BES-Prov-workshop/src/dev.off.12.pdf"
+			"rdt:hash": "768d96c83b5a0020f9ee439fc589721d",
+			"rdt:timestamp": "2019-12-05T17.45.36EST",
+			"rdt:location": "C:/Users/aellison/Documents/BES-Prov-workshop/src/dev.off.12.pdf"
 		},
 
 		"rdt:environment": {
@@ -267,12 +267,12 @@
 			"rdt:langVersion": "R version 3.6.1 (2019-07-05)",
 			"rdt:script": "",
 			"rdt:scriptTimeStamp": "",
-			"rdt:totalElapsedTime": "0.71",
+			"rdt:totalElapsedTime": "1.13",
 			"rdt:sourcedScripts": "",
 			"rdt:sourcedScriptTimeStamps": "",
-			"rdt:workingDirectory": "C:/Users/aellison/Dropbox (Harvard - FAS)/aaron's briefcase/16 - MEE/BES meetings/2019/2019 BES Workshop/BES-Prov-workshop/src",
+			"rdt:workingDirectory": "C:/Users/aellison/Documents/BES-Prov-workshop/src",
 			"rdt:provDirectory": "../prov/prov_console",
-			"rdt:provTimestamp": "2019-12-05T10.55.25EST",
+			"rdt:provTimestamp": "2019-12-05T17.45.33EST",
 			"rdt:hashAlgorithm": "md5"
 		},
 
@@ -333,6 +333,38 @@
 			}
 		},
 		"rdt:l8": {
+			"name": "provDebugR",
+			"version": "0.1.2.9000",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l9": {
+			"name": "provExplainR",
+			"version": "0.1.0",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l10": {
+			"name": "provGraphR",
+			"version": "0.1.1",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l11": {
+			"name": "provParseR",
+			"version": "0.2",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l12": {
 			"name": "provSummarizeR",
 			"version": "1.2",
 			"prov:type": {
@@ -340,7 +372,23 @@
 				"type": "xsd:QName"
 			}
 		},
-		"rdt:l9": {
+		"rdt:l13": {
+			"name": "provViz",
+			"version": "1.0.6",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l14": {
+			"name": "Rclean",
+			"version": "1.0.1",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l15": {
 			"name": "rdtLite",
 			"version": "1.2",
 			"prov:type": {
@@ -348,7 +396,7 @@
 				"type": "xsd:QName"
 			}
 		},
-		"rdt:l10": {
+		"rdt:l16": {
 			"name": "stats",
 			"version": "3.6.1",
 			"prov:type": {
@@ -356,7 +404,7 @@
 				"type": "xsd:QName"
 			}
 		},
-		"rdt:l11": {
+		"rdt:l17": {
 			"name": "usethis",
 			"version": "1.5.1",
 			"prov:type": {
@@ -364,7 +412,7 @@
 				"type": "xsd:QName"
 			}
 		},
-		"rdt:l12": {
+		"rdt:l18": {
 			"name": "utils",
 			"version": "3.6.1",
 			"prov:type": {
@@ -541,7 +589,7 @@
 			"prov:entity": "rdt:f2"
 		},
 		"rdt:m2": {
-			"prov:collection": "rdt:l12",
+			"prov:collection": "rdt:l18",
 			"prov:entity": "rdt:f1"
 		}
 	}

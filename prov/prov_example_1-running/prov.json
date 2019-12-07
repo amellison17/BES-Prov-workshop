@@ -14,9 +14,9 @@
 
 	"activity" : {
 		"rdt:p1": {
-			"rdt:name": "Console",
+			"rdt:name": "example_1-running.r",
 			"rdt:type": "Start",
-			"rdt:elapsedTime": "1.07",
+			"rdt:elapsedTime": "0.38",
 			"rdt:scriptNum": "NA",
 			"rdt:startLine": "NA",
 			"rdt:startCol": "NA",
@@ -24,99 +24,99 @@
 			"rdt:endCol": "NA"
 		},
 		"rdt:p2": {
-			"rdt:name": "data(mtcars)",
+			"rdt:name": "data (mtcars)",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.11",
-			"rdt:scriptNum": -1,
-			"rdt:startLine": -1,
-			"rdt:startCol": -1,
-			"rdt:endLine": -1,
-			"rdt:endCol": -1
+			"rdt:elapsedTime": "0.16",
+			"rdt:scriptNum": 1,
+			"rdt:startLine": 10,
+			"rdt:startCol": 1,
+			"rdt:endLine": 10,
+			"rdt:endCol": 13
 		},
 		"rdt:p3": {
 			"rdt:name": "allCars.df <- mtcars",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.12",
-			"rdt:scriptNum": -1,
-			"rdt:startLine": -1,
-			"rdt:startCol": -1,
-			"rdt:endLine": -1,
-			"rdt:endCol": -1
+			"rdt:elapsedTime": "0.15",
+			"rdt:scriptNum": 1,
+			"rdt:startLine": 13,
+			"rdt:startCol": 1,
+			"rdt:endLine": 13,
+			"rdt:endCol": 20
 		},
 		"rdt:p4": {
 			"rdt:name": "cars4Cyl.df <- allCars.df[allCars.df$cyl == 4, ]",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.21",
-			"rdt:scriptNum": -1,
-			"rdt:startLine": -1,
-			"rdt:startCol": -1,
-			"rdt:endLine": -1,
-			"rdt:endCol": -1
+			"rdt:elapsedTime": "0.11",
+			"rdt:scriptNum": 1,
+			"rdt:startLine": 16,
+			"rdt:startCol": 1,
+			"rdt:endLine": 16,
+			"rdt:endCol": 48
 		},
 		"rdt:p5": {
 			"rdt:name": "cars6Cyl.df <- allCars.df[allCars.df$cyl == 6, ]",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.06",
-			"rdt:scriptNum": -1,
-			"rdt:startLine": -1,
-			"rdt:startCol": -1,
-			"rdt:endLine": -1,
-			"rdt:endCol": -1
+			"rdt:elapsedTime": "0.14",
+			"rdt:scriptNum": 1,
+			"rdt:startLine": 17,
+			"rdt:startCol": 1,
+			"rdt:endLine": 17,
+			"rdt:endCol": 48
 		},
 		"rdt:p6": {
 			"rdt:name": "cars8Cyl.df <- allCars.df[allCars.df$cyl == 8, ]",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.05",
-			"rdt:scriptNum": -1,
-			"rdt:startLine": -1,
-			"rdt:startCol": -1,
-			"rdt:endLine": -1,
-			"rdt:endCol": -1
+			"rdt:elapsedTime": "0.12",
+			"rdt:scriptNum": 1,
+			"rdt:startLine": 18,
+			"rdt:startCol": 1,
+			"rdt:endLine": 18,
+			"rdt:endCol": 48
 		},
 		"rdt:p7": {
 			"rdt:name": "cylinders = c(4, 6, 8)",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.06",
-			"rdt:scriptNum": -1,
-			"rdt:startLine": -1,
-			"rdt:startCol": -1,
-			"rdt:endLine": -1,
-			"rdt:endCol": -1
+			"rdt:elapsedTime": "0.13",
+			"rdt:scriptNum": 1,
+			"rdt:startLine": 21,
+			"rdt:startCol": 1,
+			"rdt:endLine": 21,
+			"rdt:endCol": 22
 		},
 		"rdt:p8": {
 			"rdt:name": "mpg = c(mean(cars4Cyl.df$mpg), mean(cars6Cyl.df$mpg), mean(c",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.06",
-			"rdt:scriptNum": -1,
-			"rdt:startLine": -1,
-			"rdt:startCol": -1,
-			"rdt:endLine": -1,
-			"rdt:endCol": -1
+			"rdt:elapsedTime": "0.11",
+			"rdt:scriptNum": 1,
+			"rdt:startLine": 22,
+			"rdt:startCol": 1,
+			"rdt:endLine": 22,
+			"rdt:endCol": 76
 		},
 		"rdt:p9": {
-			"rdt:name": "cyl.vs.mpg.df <- data.frame(cylinders, mpg)",
+			"rdt:name": "cyl.vs.mpg.df <- data.frame (cylinders, mpg)",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.1",
-			"rdt:scriptNum": -1,
-			"rdt:startLine": -1,
-			"rdt:startCol": -1,
-			"rdt:endLine": -1,
-			"rdt:endCol": -1
+			"rdt:elapsedTime": "0.12",
+			"rdt:scriptNum": 1,
+			"rdt:startLine": 23,
+			"rdt:startCol": 1,
+			"rdt:endLine": 23,
+			"rdt:endCol": 44
 		},
 		"rdt:p10": {
 			"rdt:name": "plot(cylinders, mpg)",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.26",
-			"rdt:scriptNum": -1,
-			"rdt:startLine": -1,
-			"rdt:startCol": -1,
-			"rdt:endLine": -1,
-			"rdt:endCol": -1
+			"rdt:elapsedTime": "0.15",
+			"rdt:scriptNum": 1,
+			"rdt:startLine": 26,
+			"rdt:startCol": 1,
+			"rdt:endLine": 26,
+			"rdt:endCol": 20
 		},
 		"rdt:p11": {
-			"rdt:name": "Console",
+			"rdt:name": "example_1-running.r",
 			"rdt:type": "Finish",
-			"rdt:elapsedTime": "0.2",
+			"rdt:elapsedTime": "0.0",
 			"rdt:scriptNum": "NA",
 			"rdt:startLine": "NA",
 			"rdt:startCol": "NA",
@@ -134,7 +134,7 @@
 			"rdt:scope": "undefined",
 			"rdt:fromEnv": false,
 			"rdt:hash": "38e8626002451387c9736b180aa0dfde",
-			"rdt:timestamp": "2019-12-07T12.00.45EST",
+			"rdt:timestamp": "2019-12-07T12.08.31EST",
 			"rdt:location": "C:/Users/aellison/Documents/R/win-library/3.6/ggplot2/data/Rdata.rds"
 		},
 		"rdt:d2": {
@@ -145,7 +145,7 @@
 			"rdt:scope": "undefined",
 			"rdt:fromEnv": false,
 			"rdt:hash": "8c786a8197c854c598fb156aadf24546",
-			"rdt:timestamp": "2019-12-07T12.00.45EST",
+			"rdt:timestamp": "2019-12-07T12.08.31EST",
 			"rdt:location": "C:/Program Files/R/R-3.6.1/library/datasets/data/Rdata.rds"
 		},
 		"rdt:d3": {
@@ -254,8 +254,8 @@
 			"rdt:type": "File",
 			"rdt:scope": "undefined",
 			"rdt:fromEnv": false,
-			"rdt:hash": "25883a3385a6c24c9c5d551cc2139881",
-			"rdt:timestamp": "2019-12-07T12.00.58EST",
+			"rdt:hash": "413841b7d44399af5750b48669e1c2a1",
+			"rdt:timestamp": "2019-12-07T12.08.32EST",
 			"rdt:location": "C:/Users/aellison/Documents/GitHub/BES-Prov-workshop/src/dev.off.12.pdf"
 		},
 
@@ -265,14 +265,14 @@
 			"rdt:operatingSystem": "mingw32",
 			"rdt:language": "R",
 			"rdt:langVersion": "R version 3.6.1 (2019-07-05)",
-			"rdt:script": "",
-			"rdt:scriptTimeStamp": "",
-			"rdt:totalElapsedTime": "2.3",
+			"rdt:script": "C:/Users/aellison/Documents/GitHub/BES-Prov-workshop/src/example_1-running.r",
+			"rdt:scriptTimeStamp": "2019-12-07T12.08.25EST",
+			"rdt:totalElapsedTime": "1.57",
 			"rdt:sourcedScripts": "",
 			"rdt:sourcedScriptTimeStamps": "",
 			"rdt:workingDirectory": "C:/Users/aellison/Documents/GitHub/BES-Prov-workshop/src",
-			"rdt:provDirectory": "../prov/prov_console",
-			"rdt:provTimestamp": "2019-12-07T12.00.41EST",
+			"rdt:provDirectory": "../prov/prov_example_1-running",
+			"rdt:provTimestamp": "2019-12-07T12.08.30EST",
 			"rdt:hashAlgorithm": "md5"
 		},
 

@@ -12,10 +12,8 @@ is.installed <- function(pkglist){
 
 #source files for loading prov libraries
 
-source("provSummarizeR.R") #newer version of provSummarizeR (5-Dec-2019) to capture console prov
-
-CRANlist <- c("rdtLite", "devtools", "provParseR", "provSummarizeR", "provViz") #packages on CRAN
-GITlist <- c("provGraphR", "provDebugR", "provExplainR") #packages on github
+CRANlist <- c("rdtLite", "devtools", "provParseR", "provViz") #packages on CRAN
+GITlist <- c("provGraphR", "provDebugR", "provExplainR", "provSummarizeR") #packages on github
 
 #(Install) and load libraries available on CRAN
 for(i in 1:length(CRANlist)) {
@@ -39,4 +37,15 @@ if(!is.installed("provClean")){
 require(provClean)
 
 
+#load packages for species occurrence analysis (example 3a)
+
+OCCList = c("spocc", "mapr") 
+
+#(Install) and load libraries available on CRAN
+for(i in 1:length(OCCList)) {
+	if(!is.installed(OCCList[i])){
+		install.packages(OCCList[i])
+	}
+	require(OCCList[i], character.only=TRUE)
+}
 

@@ -29,7 +29,7 @@ If your bringing a laptop (helpful, but not required), please ensure that your s
 
 1. Ice-breakers (*5 minutes*)
 2. Trust in data and code (*Sticky-note exercise, group discussion*)
-3. The value of provenance (*Presentation*)
+3. The what and why of provenance (*Presentation*)
 
 BioBreak
 
@@ -38,7 +38,7 @@ BioBreak
     1. ***rdtLite*** collects basic provenance of an R script (or console session) and saves to `prov.json`
         1. ***provParseR*** parses the `prov.json` into an R object for use by other prov-routines. Required by *provSummarizeR, provExplainR, provDebugR,* and *provClean*.
         2. *provGraphR* creates an adjacency matrix from the provenance object created by *provParseR* to allow for its rapid processing and use. Required by *provDebugR* and *provClean*.
-    2. ***provSummarizeR*** creates a concise summary of the computing environment and "coarse-grained" provenance collected by *rdtLite*. This includes:
+    2. *provSummarizeR* creates a concise summary of the computing environment and "coarse-grained" provenance collected by *rdtLite*. This includes:
         1. Computing environment;
         2. Libraries loaded in the script;
         3. User-written functions "sourced" in the script;
@@ -49,8 +49,15 @@ BioBreak
     4. *provDebugR* is a "time-travelling" debugger that allows for rapid testing and debugging of R scripts.
     5. *provExplainR* uses provenance collected on two different executions of a single script and explains why the results differ.
     6. *provClean* (*alpha* development version) uses provenance to simplify a script.
-6. Hands-on work
-    1. `libsource.R` sets up clean work space, installs packages, loads libraries
-    2. `/src/example_1.R` is a first example using R's "cars" data to illustrate the simplicity and complexity of provenance
+6. Hands-on work (1)
+    1. `libsource.R` sets up clean work space, installs packages, loads libraries.
+    2. `/src/example_1.R` is a first example using R's "cars" data to illustrate the simplicity and complexity of provenance.
+        1. `example_1.R` should be executed with `prov.run(...)` to illustrate "one-stop" provenance collection.
+        2. `example_1-interactive.R` should be executed line-at-a-time to illustrate different aspects of provenance collection *via* console
     
 BioBreak
+
+7. Recap of first example and further discussion of the potential value and utility of provenance
+8. Hands-on work (2)
+    1. `/src/example_2a.R` introduces how to use provenance to assist with debugging
+    2. `/src/example_2b.R` illustrates how provenance captures data types to assist with clean (*vs.* lazy) coding

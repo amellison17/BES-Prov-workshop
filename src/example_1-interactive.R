@@ -1,7 +1,5 @@
 #Provenance defined and a first example (from Lerner et al. in prep)
 
-source("libsource.R")
-
 prov.init(prov.dir="../prov", overwrite=TRUE) #initialize provenance collection
 
 #prov.init(prov.dir"../prov", overwrite=FALSE) #Change overwrite if time-stamp desired

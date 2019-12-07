@@ -21,6 +21,9 @@ If your bringing a laptop (helpful, but not required), please ensure that your s
         * Install R packages `provGraphR`, `provDebugR`, `provExplainR`, from GitHub: `devtools::install_github("End-to-end-provenance/<name-of-package>"` where `<name-of-package>` is each of these packages. Note that you must have already installed the R `devtools` package for this to work.
         * Install R package `provClean` from a development branch on GitHub `devtools::install_github("End-to-end-provenance/provClean", ref="dev")`
 * If you don't have Java on your computer, please install it. Java can be downloaded here: `https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html`. Note that you have to "Accept the license agreement" and create an Oracle account before you can download Java
+* Last, if you want to work with the scripts, data, *etc.* posted on GitHub, you will need a GitHub account, and you may want to install GitHub desktop for easier tools to work with GitHub:
+    * Create a GitHub account at <https://github.com/>
+    * Download and install GitHub desktop from <https://desktop.github.com> (Current version is 2.2.3)
 
 ##Agenda
 

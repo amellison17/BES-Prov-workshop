@@ -25,17 +25,17 @@ If your bringing a laptop (helpful, but not required), please ensure that your s
     * Create a GitHub account at <https://github.com/>
     * Download and install GitHub desktop from <https://desktop.github.com> (Current version is 2.2.3)
 
-##Agenda
+## Agenda
 
-14:00 Introductions
+### 14:00 Introductions
 
 1. Ice-breakers (*5 minutes*)
 2. Trust in data and code (*Sticky-note exercise, group discussion*)
 3. The what and why of provenance (*Presentation*)
 
-BioBreak
+### BioBreak
 
-15:00 Hands-on (I)
+### 15:00 Hands-on (I)
 
 4. Recap & Questions
 5. Generating provenance and using provenance-based tools using <https://end-to-end-provenance.github.io>
@@ -59,9 +59,9 @@ BioBreak
         1. `example_1.R` should be executed with `prov.run(...)` to illustrate "one-stop" provenance collection.
         2. `example_1-interactive.R` should be executed line-at-a-time to illustrate different aspects of provenance collection *via* console
     
-BioBreak
+### BioBreak
 
-16:00 Hands-on (II)
+### 16:00 Hands-on (II)
 
 7. Recap of first example and further discussion of the potential value and utility of provenance
 8. Hands-on work (2)
@@ -69,9 +69,11 @@ BioBreak
     2. `/src/example_2b.R` illustrates how provenance captures data types to assist with clean (*vs.* lazy) coding
 9. Recap/discussion of the value of provenance
 
-17:00 Hands-on (III)
+### 17:00 Hands-on (III)
 
 10. More complex examples and future work
      1. `src/example_3.R` illustrates a relatively simple simulation of population growth and demographic transitions. Example taken from Gotelli & Ellison ([2002](https://harvardforest.fas.harvard.edu/sites/harvardforest.fas.harvard.edu/files/ellison-pubs/2002/gotelli_and_ellison_2002b.pdf), [2006](https://harvardforest.fas.harvard.edu/sites/harvardforest.fas.harvard.edu/files/ellison-pubs/2006/gotelli_ellison_2006_ecolapp.pdf))
      2. `src/example_3a.R` illustrates importing remote data, manipulating the data, plotting it, and a simple ANOVA. Example taken from Fig. 1 of Wakefield *et al.* ([2005](https://harvardforest.fas.harvard.edu/sites/harvardforest.fas.harvard.edu/files/ellison-pubs/2005/wakefield_etal_2005.pdf)) and data on the Harvard Forest Data Archive, dataset [HF328](https://harvardforest.fas.harvard.edu/exist/apps/datasets/showData.html?id=HF328)
      3. `src/example_3b.R` is a small script that imports species-occurrence data from multiple data repositories and plots it. Currently works only with a development version of `rdtLite`. Hope to update on this at the workshop.
+     
+### 18:00 End

@@ -46,11 +46,11 @@ prov.visualize()
 
 #Repeating published research example 3a
 
-prov.run("example_3.R", prov.dir="../prov")
+prov.run("example_3a.R", prov.dir="../prov")
 prov.summarize()
 prov.visualize()
 
 #Working with species occurrence data example 3b
 #Development version of RDataTracker and contributing to the effort
 
-prov.run("example_3.R", prov.dir="../prov")
+prov.run("example_3b.R", prov.dir="../prov")

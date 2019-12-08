@@ -2,15 +2,16 @@
 #data for Polyergus lucidus (a slave-making ant)
 #Working example obtaining data from GBIF
 
-library(spocc)
 
 Polyergus <- occ(query="Polyergus lucidus", from="gbif",has_coords = TRUE)
 
-#Polyergus.df <- occ2df(Polyergus)
+Polyergus.df <- occ2df(Polyergus)
 
 #P.map <- map_plot(Polyergus)
 
-Polyergus.df = data.frame(Polyergus$gbif$data$Polyergus_lucidus)
+
+
+#Polyergus.df = data.frame(Polyergus$gbif$data$Polyergus_lucidus)
 
 worldmap <- map_data('world')
 

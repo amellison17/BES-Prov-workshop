@@ -1,0 +1,514 @@
+{
+	"prefix": {
+		"prov": "http://www.w3.org/ns/prov#",
+		"rdt": "https://github.com/End-to-end-provenance/ExtendedProvJson/blob/master/JSON-format.md"
+	},
+
+	"agent" : {
+		"rdt:a1": {
+			"rdt:tool.name": "rdtLite",
+			"rdt:tool.version": "1.2.1",
+			"rdt:json.version": "2.3",
+			"rdt:args.names": [
+				"overwrite",
+				"details",
+				"snapshot.size",
+				"save.debug"
+			],
+			"rdt:args.values": [
+				"TRUE",
+				"TRUE",
+				"0",
+				"FALSE"
+			],
+			"rdt:args.types": [
+				"logical",
+				"logical",
+				"numeric",
+				"logical"
+			]
+		}
+	},
+
+	"activity" : {
+		"rdt:p1": {
+			"rdt:name": "example_3b.R",
+			"rdt:type": "Start",
+			"rdt:elapsedTime": "0.65",
+			"rdt:scriptNum": "NA",
+			"rdt:startLine": "NA",
+			"rdt:startCol": "NA",
+			"rdt:endLine": "NA",
+			"rdt:endCol": "NA"
+		},
+		"rdt:p2": {
+			"rdt:name": "Polyergus <- occ(query=\"Polyergus lucidus\", from=\"gbif\",has_",
+			"rdt:type": "Operation",
+			"rdt:elapsedTime": "0.81",
+			"rdt:scriptNum": 1,
+			"rdt:startLine": 6,
+			"rdt:startCol": 1,
+			"rdt:endLine": 6,
+			"rdt:endCol": 74
+		},
+		"rdt:p3": {
+			"rdt:name": "Polyergus.df = data.frame(Polyergus$gbif$data$Polyergus_luci",
+			"rdt:type": "Operation",
+			"rdt:elapsedTime": "11.56",
+			"rdt:scriptNum": 1,
+			"rdt:startLine": 14,
+			"rdt:startCol": 1,
+			"rdt:endLine": 14,
+			"rdt:endCol": 64
+		},
+		"rdt:p4": {
+			"rdt:name": "worldmap <- map_data('world')",
+			"rdt:type": "Operation",
+			"rdt:elapsedTime": "0.9",
+			"rdt:scriptNum": 1,
+			"rdt:startLine": 16,
+			"rdt:startCol": 1,
+			"rdt:endLine": 16,
+			"rdt:endCol": 29
+		},
+		"rdt:p5": {
+			"rdt:name": "Polyergus.map <- \nggplot() +\n  geom_polygon(data=worldmap, f",
+			"rdt:type": "Operation",
+			"rdt:elapsedTime": "0.25",
+			"rdt:scriptNum": 1,
+			"rdt:startLine": 18,
+			"rdt:startCol": 1,
+			"rdt:endLine": 22,
+			"rdt:endCol": 18
+		},
+		"rdt:p6": {
+			"rdt:name": "ggsave(\"../graphics/Polyergus.png\")",
+			"rdt:type": "Operation",
+			"rdt:elapsedTime": "2.36",
+			"rdt:scriptNum": 1,
+			"rdt:startLine": 24,
+			"rdt:startCol": 1,
+			"rdt:endLine": 24,
+			"rdt:endCol": 35
+		},
+		"rdt:p7": {
+			"rdt:name": "example_3b.R",
+			"rdt:type": "Finish",
+			"rdt:elapsedTime": "0.02",
+			"rdt:scriptNum": "NA",
+			"rdt:startLine": "NA",
+			"rdt:startCol": "NA",
+			"rdt:endLine": "NA",
+			"rdt:endCol": "NA"
+		}
+	},
+
+	"entity" : {
+		"rdt:d1": {
+			"rdt:name": "Polyergus",
+			"rdt:value": "[Aug. 8, 1996; added 12-JUL-2002]\"\t\t\t\t\t\t\t\t\t\t\t  ...",
+			"rdt:valType": "occdat",
+			"rdt:type": "Data",
+			"rdt:scope": "R_GlobalEnv",
+			"rdt:fromEnv": false,
+			"rdt:hash": "",
+			"rdt:timestamp": "",
+			"rdt:location": ""
+		},
+		"rdt:d2": {
+			"rdt:name": "Polyergus.df",
+			"rdt:value": "Row 1 Polyergus lucidus Mayr, 1870 -71.65912 42.59468 cdround,gass84 gbif",
+			"rdt:valType": "{\"container\":\"data_frame\", \"dimension\":[181,121], \"type\":[\"character\",\"numeric\",\"numeric\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"integer\",\"character\",\"integer\",\"integer\",\"integer\",\"integer\",\"integer\",\"integer\",\"integer\",\"integer\",\"integer\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"numeric\",\"character\",\"integer\",\"integer\",\"integer\",\"Date\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"integer\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\",\"numeric\",\"numeric\",\"character\",\"character\",\"character\",\"character\",\"character\",\"character\"]}",
+			"rdt:type": "Data",
+			"rdt:scope": "R_GlobalEnv",
+			"rdt:fromEnv": false,
+			"rdt:hash": "",
+			"rdt:timestamp": "",
+			"rdt:location": ""
+		},
+		"rdt:d3": {
+			"rdt:name": "world.N",
+			"rdt:value": "data/3-world.N",
+			"rdt:valType": "{\"container\":\"vector\", \"dimension\":[1], \"type\":[\"character\"]}",
+			"rdt:type": "File",
+			"rdt:scope": "undefined",
+			"rdt:fromEnv": false,
+			"rdt:hash": "eeef75dc784371d7b3e3a91734ba766a",
+			"rdt:timestamp": "2019-12-08T13.19.25EST",
+			"rdt:location": "C:/Users/aellison/Documents/R/win-library/3.6/maps/mapdata/world.N"
+		},
+		"rdt:d4": {
+			"rdt:name": "worldmap",
+			"rdt:value": "Row 1 -69.89912 12.452\t 1\t 1  Aruba\t  <NA>",
+			"rdt:valType": "{\"container\":\"data_frame\", \"dimension\":[99338,6], \"type\":[\"numeric\",\"numeric\",\"numeric\",\"integer\",\"character\",\"character\"]}",
+			"rdt:type": "Data",
+			"rdt:scope": "R_GlobalEnv",
+			"rdt:fromEnv": false,
+			"rdt:hash": "",
+			"rdt:timestamp": "",
+			"rdt:location": ""
+		},
+		"rdt:d5": {
+			"rdt:name": "Polyergus.map",
+			"rdt:value": "\"long\"$labels.y[1] \"lat\"$labels.group[1] \"group\"",
+			"rdt:valType": "gg",
+			"rdt:type": "Data",
+			"rdt:scope": "R_GlobalEnv",
+			"rdt:fromEnv": false,
+			"rdt:hash": "",
+			"rdt:timestamp": "",
+			"rdt:location": ""
+		},
+		"rdt:d6": {
+			"rdt:name": "Polyergus.png",
+			"rdt:value": "data/6-Polyergus.png",
+			"rdt:valType": "{\"container\":\"vector\", \"dimension\":[1], \"type\":[\"character\"]}",
+			"rdt:type": "File",
+			"rdt:scope": "undefined",
+			"rdt:fromEnv": false,
+			"rdt:hash": "1dc37219b0574a2ad02a1e87059ff41f",
+			"rdt:timestamp": "2019-12-08T13.19.28EST",
+			"rdt:location": "C:/Users/aellison/Documents/GitHub/BES-Prov-workshop/graphics/Polyergus.png"
+		},
+
+		"rdt:environment": {
+			"rdt:name": "environment",
+			"rdt:architecture": "x86_64",
+			"rdt:operatingSystem": "mingw32",
+			"rdt:language": "R",
+			"rdt:langVersion": "R version 3.6.1 (2019-07-05)",
+			"rdt:script": "C:/Users/aellison/Documents/GitHub/BES-Prov-workshop/src/example_3b.R",
+			"rdt:scriptTimeStamp": "2019-12-08T13.17.08EST",
+			"rdt:totalElapsedTime": "16.55",
+			"rdt:sourcedScripts": "",
+			"rdt:sourcedScriptTimeStamps": "",
+			"rdt:workingDirectory": "C:/Users/aellison/Documents/GitHub/BES-Prov-workshop/src",
+			"rdt:provDirectory": "../prov/prov_example_3b",
+			"rdt:provTimestamp": "2019-12-08T13.19.08EST",
+			"rdt:hashAlgorithm": "md5"
+		},
+
+		"rdt:l1": {
+			"name": "base",
+			"version": "3.6.1",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l2": {
+			"name": "datasets",
+			"version": "3.6.1",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l3": {
+			"name": "devtools",
+			"version": "2.2.1",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l4": {
+			"name": "ggplot2",
+			"version": "3.2.1",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l5": {
+			"name": "graphics",
+			"version": "3.6.1",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l6": {
+			"name": "grDevices",
+			"version": "3.6.1",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l7": {
+			"name": "mapr",
+			"version": "0.4.0",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l8": {
+			"name": "methods",
+			"version": "3.6.1",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l9": {
+			"name": "provClean",
+			"version": "1.0.2",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l10": {
+			"name": "provDebugR",
+			"version": "0.1.2.9000",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l11": {
+			"name": "provExplainR",
+			"version": "0.1.0",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l12": {
+			"name": "provGraphR",
+			"version": "0.1.1",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l13": {
+			"name": "provParseR",
+			"version": "0.2",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l14": {
+			"name": "provSummarizeR",
+			"version": "1.3",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l15": {
+			"name": "provViz",
+			"version": "1.0.6",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l16": {
+			"name": "rdtLite",
+			"version": "1.2.1",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l17": {
+			"name": "spocc",
+			"version": "1.0.2",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l18": {
+			"name": "stats",
+			"version": "3.6.1",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l19": {
+			"name": "usethis",
+			"version": "1.5.1",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+		"rdt:l20": {
+			"name": "utils",
+			"version": "3.6.1",
+			"prov:type": {
+				"$": "prov:Collection",
+				"type": "xsd:QName"
+			}
+		},
+
+		"rdt:f1": {
+			"name": "occ"
+		},
+		"rdt:f2": {
+			"name": "map_data"
+		},
+		"rdt:f3": {
+			"name": "ggplot"
+		},
+		"rdt:f4": {
+			"name": "geom_polygon"
+		},
+		"rdt:f5": {
+			"name": "aes"
+		},
+		"rdt:f6": {
+			"name": "geom_point"
+		},
+		"rdt:f7": {
+			"name": "coord_quickmap"
+		},
+		"rdt:f8": {
+			"name": "ggsave"
+		}
+	},
+
+	"wasInformedBy" : {
+		"rdt:pp1": {
+			"prov:informant": "rdt:p1",
+			"prov:informed": "rdt:p2"
+		},
+		"rdt:pp2": {
+			"prov:informant": "rdt:p2",
+			"prov:informed": "rdt:p3"
+		},
+		"rdt:pp3": {
+			"prov:informant": "rdt:p3",
+			"prov:informed": "rdt:p4"
+		},
+		"rdt:pp4": {
+			"prov:informant": "rdt:p4",
+			"prov:informed": "rdt:p5"
+		},
+		"rdt:pp5": {
+			"prov:informant": "rdt:p5",
+			"prov:informed": "rdt:p6"
+		},
+		"rdt:pp6": {
+			"prov:informant": "rdt:p6",
+			"prov:informed": "rdt:p7"
+		}
+	},
+
+	"wasGeneratedBy" : {
+		"rdt:pd1": {
+			"prov:activity": "rdt:p2",
+			"prov:entity": "rdt:d1"
+		},
+		"rdt:pd2": {
+			"prov:activity": "rdt:p3",
+			"prov:entity": "rdt:d2"
+		},
+		"rdt:pd3": {
+			"prov:activity": "rdt:p4",
+			"prov:entity": "rdt:d4"
+		},
+		"rdt:pd4": {
+			"prov:activity": "rdt:p5",
+			"prov:entity": "rdt:d5"
+		},
+		"rdt:pd5": {
+			"prov:activity": "rdt:p6",
+			"prov:entity": "rdt:d6"
+		}
+	},
+
+	"used" : {
+		"rdt:dp1": {
+			"prov:entity": "rdt:d3",
+			"prov:activity": "rdt:p4"
+		},
+		"rdt:dp2": {
+			"prov:entity": "rdt:d4",
+			"prov:activity": "rdt:p5"
+		},
+		"rdt:dp3": {
+			"prov:entity": "rdt:d2",
+			"prov:activity": "rdt:p5"
+		},
+		"rdt:dp4": {
+			"prov:entity": "rdt:d5",
+			"prov:activity": "rdt:p6"
+		},
+
+		"rdt:fp1": {
+			"prov:entity": "rdt:f1",
+			"prov:activity": "rdt:p2"
+		},
+		"rdt:fp2": {
+			"prov:entity": "rdt:f2",
+			"prov:activity": "rdt:p4"
+		},
+		"rdt:fp3": {
+			"prov:entity": "rdt:f3",
+			"prov:activity": "rdt:p5"
+		},
+		"rdt:fp4": {
+			"prov:entity": "rdt:f4",
+			"prov:activity": "rdt:p5"
+		},
+		"rdt:fp5": {
+			"prov:entity": "rdt:f5",
+			"prov:activity": "rdt:p5"
+		},
+		"rdt:fp6": {
+			"prov:entity": "rdt:f6",
+			"prov:activity": "rdt:p5"
+		},
+		"rdt:fp7": {
+			"prov:entity": "rdt:f7",
+			"prov:activity": "rdt:p5"
+		},
+		"rdt:fp8": {
+			"prov:entity": "rdt:f8",
+			"prov:activity": "rdt:p6"
+		}
+	},
+
+	"hadMember" : {
+		"rdt:m1": {
+			"prov:collection": "rdt:l4",
+			"prov:entity": "rdt:f2"
+		},
+		"rdt:m2": {
+			"prov:collection": "rdt:l4",
+			"prov:entity": "rdt:f3"
+		},
+		"rdt:m3": {
+			"prov:collection": "rdt:l4",
+			"prov:entity": "rdt:f4"
+		},
+		"rdt:m4": {
+			"prov:collection": "rdt:l4",
+			"prov:entity": "rdt:f5"
+		},
+		"rdt:m5": {
+			"prov:collection": "rdt:l4",
+			"prov:entity": "rdt:f6"
+		},
+		"rdt:m6": {
+			"prov:collection": "rdt:l4",
+			"prov:entity": "rdt:f7"
+		},
+		"rdt:m7": {
+			"prov:collection": "rdt:l4",
+			"prov:entity": "rdt:f8"
+		},
+		"rdt:m8": {
+			"prov:collection": "rdt:l17",
+			"prov:entity": "rdt:f1"
+		}
+	}
+}

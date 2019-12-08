@@ -74,6 +74,6 @@ If your bringing a laptop (helpful, but not required), please ensure that your s
 10. More complex examples and future work
      1. `src/example_3.R` illustrates a relatively simple simulation of population growth and demographic transitions. Example taken from Gotelli & Ellison ([2002](https://harvardforest.fas.harvard.edu/sites/harvardforest.fas.harvard.edu/files/ellison-pubs/2002/gotelli_and_ellison_2002b.pdf), [2006](https://harvardforest.fas.harvard.edu/sites/harvardforest.fas.harvard.edu/files/ellison-pubs/2006/gotelli_ellison_2006_ecolapp.pdf))
      2. `src/example_3a.R` illustrates importing remote data, manipulating the data, plotting it, and a simple ANOVA. Example taken from Fig. 1 of Wakefield *et al.* ([2005](https://harvardforest.fas.harvard.edu/sites/harvardforest.fas.harvard.edu/files/ellison-pubs/2005/wakefield_etal_2005.pdf)) and data on the Harvard Forest Data Archive, dataset [HF328](https://harvardforest.fas.harvard.edu/exist/apps/datasets/showData.html?id=HF328)
-     3. `src/example_3b.R` is a small script that imports species-occurrence data from multiple data repositories and plots it. Currently works only with a development version of `rdtLite`. Hope to update on this at the workshop.
+     3. `src/example_3b.R` is a small script that imports species-occurrence data using R library `spocc` from multiple data repositories and maps it. Currently works only with a development version of `rdtLite`. Hope to update on this at the workshop.
      
 ### 18:00 End

@@ -22,6 +22,7 @@ debug.warning.trace()
 debug.warning.trace(1)
 debug.error.trace()
 debug.error.trace(stack.overflow=TRUE)
+
 debug.lineage("z")
 
 #Debug example 2b
@@ -36,3 +37,20 @@ debug.init() 	#if prov.run(...) has already been run
 
 debug.variable.type()
 debug.variable.type("x")
+
+#Simulation modeling example 3
+
+prov.run("example_3.R", prov.dir="../prov")
+prov.summarize()
+prov.visualize()
+
+#Repeating published research example 3a
+
+prov.run("example_3.R", prov.dir="../prov")
+prov.summarize()
+prov.visualize()
+
+#Working with species occurrence data example 3b
+#Development version of RDataTracker and contributing to the effort
+
+prov.run("example_3.R", prov.dir="../prov")

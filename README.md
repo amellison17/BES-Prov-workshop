@@ -27,11 +27,15 @@ If your bringing a laptop (helpful, but not required), please ensure that your s
 
 ##Agenda
 
+14:00 Introductions
+
 1. Ice-breakers (*5 minutes*)
 2. Trust in data and code (*Sticky-note exercise, group discussion*)
 3. The what and why of provenance (*Presentation*)
 
 BioBreak
+
+15:00 Hands-on (I)
 
 4. Recap & Questions
 5. Generating provenance and using provenance-based tools using <https://end-to-end-provenance.github.io>
@@ -57,7 +61,16 @@ BioBreak
     
 BioBreak
 
+16:00 Hands-on (II)
+
 7. Recap of first example and further discussion of the potential value and utility of provenance
 8. Hands-on work (2)
     1. `/src/example_2a.R` introduces how to use provenance to assist with debugging
     2. `/src/example_2b.R` illustrates how provenance captures data types to assist with clean (*vs.* lazy) coding
+9. Recap/discussion of the value of provenance
+
+17:00 Hands-on (III)
+
+10. More complex examples and future work
+     1. `src/example_3.R` illustrates a relatively simple simulation of population growth and demographic transitions. Example taken from Gotelli & Ellison ([2002](https://harvardforest.fas.harvard.edu/sites/harvardforest.fas.harvard.edu/files/ellison-pubs/2002/gotelli_and_ellison_2002b.pdf), [2006](https://harvardforest.fas.harvard.edu/sites/harvardforest.fas.harvard.edu/files/ellison-pubs/2006/gotelli_ellison_2006_ecolapp.pdf)) 
+     2. `src/example_3a.R` is a small script that imports data via a DOI

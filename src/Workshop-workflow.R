@@ -52,5 +52,21 @@ prov.visualize()
 
 #Working with species occurrence data example 3b
 #Development version of RDataTracker and contributing to the effort
+#illustrates graceful exit on error
+#illustrates prov.explain() to compare provs
 
-prov.run("example_3b.R", prov.dir="../prov")
+#be sure to have run the "workshop" version of rdtLite (in tarball)
+
+prov.run("example_3b-0.R", prov.dir="../prov")
+
+prov.run("example_3b-1.R", prov.dir="../prov")
+
+prov.summarize.file("../prov/prov_example_3b-0/prov.json")
+prov.visualize.file("../prov/prov_example_3b-0/prov.json")
+
+prov.summarize.file("../prov/prov_example_3b-1/prov.json")
+prov.visualize.file("../prov/prov_example_3b-1/prov.json")
+
+prov.explain("../prov/prov_example_3b-0/", "../prov/prov_example_3b-1/")
+
+prov.diff.script("example_3b-0.R", "../prov/prov_example_3b-0/", "../prov/prov_example_3b-1/", "example_3b-1.R")

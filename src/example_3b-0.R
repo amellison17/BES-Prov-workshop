@@ -1,15 +1,8 @@
-#example 3a - Species occurrence data
+#example 3b-0 - Species occurrence data
 #data for Polyergus lucidus (a slave-making ant)
 #Working example obtaining data from GBIF
 
-
 Polyergus <- occ(query="Polyergus lucidus", from="gbif",has_coords = TRUE)
-
-#Polyergus.df <- occ2df(Polyergus)
-
-#P.map <- map_plot(Polyergus)
-
-
 
 Polyergus.df = data.frame(Polyergus$gbif$data$Polyergus_lucidus)
 

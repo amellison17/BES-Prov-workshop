@@ -36,8 +36,13 @@ if(!is.installed("provClean")){
 }
 require(provClean)
 
+#load packages for species occurrence analysis (example 3b)
 
-#load packages for species occurrence analysis (example 3a)
+#8 December 2019
+#Updating rdtLite on the fly to deal with I/O errors with spocc
+remove.packages("rdtLite")
+install.packages("tarball/rdtLite_1.2.1.tar.gz")
+library(rdtLite)
 
 OCCList = c("spocc", "mapr") 
 

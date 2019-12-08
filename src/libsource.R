@@ -1,4 +1,4 @@
-#Set of functions to install (if necessary) and load required packages for provenance
+#Set of functions to install (if necessary) and load required packages for provenance workshop
 
 #start with a clean workspace
 
@@ -12,8 +12,8 @@ is.installed <- function(pkglist){
 
 #source files for loading prov libraries
 
-CRANlist <- c("rdtLite", "devtools", "provParseR", "provViz") #packages on CRAN
-GITlist <- c("provGraphR", "provDebugR", "provExplainR", "provSummarizeR") #packages on github
+CRANlist <- c("rdtLite", "devtools", "provParseR", "provViz", "provSummarizeR") #packages on CRAN
+GITlist <- c("provGraphR", "provDebugR", "provExplainR") #packages on github
 
 #(Install) and load libraries available on CRAN
 for(i in 1:length(CRANlist)) {
@@ -41,11 +41,26 @@ require(provClean)
 
 OCCList = c("spocc", "mapr") 
 
-#(Install) and load libraries available on CRAN
+#(Install) and load libraries available for occurrence data
 for(i in 1:length(OCCList)) {
 	if(!is.installed(OCCList[i])){
 		install.packages(OCCList[i])
 	}
 	require(OCCList[i], character.only=TRUE)
 }
+
+
+#load packages for SDM modeling (not needed for workshop)
+
+#SDMList=c("dismo", "ecospat", "raster", "maptools","ENMeval", "spdep",
+#	"rworldmap", "foreach", "doParallel", "pbapply", "rJava")
+
+#(Install) and load libraries available for SDM data and modeling
+#for(i in 1:length(SDMList)) {
+#	if(!is.installed(SDMList[i])){
+#		install.packages(SDMList[i])
+#	}
+#	require(SDMList[i], character.only=TRUE)
+#}
+
 

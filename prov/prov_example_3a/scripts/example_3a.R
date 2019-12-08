@@ -4,6 +4,7 @@
 
 Polyergus <- occ(query="Polyergus lucidus")
 
-map_plot(Polyergus)
+P.map <- map_plot(Polyergus)
+
 
 

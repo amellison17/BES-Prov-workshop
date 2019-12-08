@@ -1,11 +1,5 @@
 #Provenance defined and a first example (from Lerner et al. in prep)
 
-#source("libsource.R")
-
-#prov.init(prov.dir="../prov", overwrite=TRUE) #initialize provenance collection
-
-#prov.init(prov.dir"../prov", overwrite=FALSE) #Change overwrite if time-stamp desired
-
 # Load the mtcars data set that comes with R
 data (mtcars)
 
@@ -25,12 +19,4 @@ cyl.vs.mpg.df <- data.frame (cylinders, mpg)
 # Plot it
 plot(cylinders, mpg)
 
-#prov.save() #end provenance collection and save
-#prov.quit()
-
-#Get basic information on computing environment
-
-#prov.summarize()
-
-#
 

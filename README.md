@@ -69,6 +69,8 @@ If your bringing a laptop (helpful, but not required), please ensure that your s
     2. `/src/example_2b.R` illustrates how provenance captures data types to assist with clean (*vs.* lazy) coding
 9. Recap/discussion of the value of provenance
 
+### BioBreak
+
 ### 17:00 Hands-on (III)
 
 10. More complex examples and the challenges of keeping up with open-source software

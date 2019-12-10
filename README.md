@@ -19,9 +19,9 @@ If your bringing a laptop (helpful, but not required), please ensure that your s
     * This can be done by executing the script `\src\libsource.R` on this repo, or by the following steps:
         * Install R package rdtLite and its dependencies (`install.packages("rdtLite", dependencies=TRUE)`
         * Install R packages `provGraphR`, `provDebugR`, `provExplainR`, from GitHub: `devtools::install_github("End-to-end-provenance/<name-of-package>"` where `<name-of-package>` is each of these packages. Note that you must have already installed the R `devtools` package for this to work.
-        * ***Update 10 December 2019*** For example 3b, you will need the GitHub version of `rdtLite`. Execute the following sequence of commands:
-            1. `remove.packages("rdtLite")
-            2. `devtools::install_github("End-to-end-provenance/rdtLite")
+        * ***Update 10 December 2019:*** For example 3b, you will need the GitHub version of `rdtLite`. Execute the following sequence of commands:
+            1. `remove.packages("rdtLite")`
+            2. `devtools::install_github("End-to-end-provenance/rdtLite")`
         * Install R package `provClean` from a development branch on GitHub `devtools::install_github("End-to-end-provenance/provClean", ref="dev")`
 * If you don't have Java on your computer, please install it. Java can be downloaded here: `https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html`. Note that you have to "Accept the license agreement" and create an Oracle account before you can download Java
 * Last, if you want to work with the scripts, data, *etc.* posted on GitHub, you will need a GitHub account, and you may want to install GitHub desktop for easier tools to work with GitHub:

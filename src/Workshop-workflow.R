@@ -70,3 +70,11 @@ prov.visualize.file("../prov/prov_example_3b-1/prov.json")
 prov.explain("../prov/prov_example_3b-0/", "../prov/prov_example_3b-1/")
 
 prov.diff.script("example_3b-0.R", "../prov/prov_example_3b-0/", "../prov/prov_example_3b-1/", "example_3b-1.R")
+
+
+#If time
+#Creating clean scripts from complex ones using provClean
+
+prov.run("example_4.R", prov.dir="../prov")
+clean.prov("../prov/prov_example_4/prov.json")
+a <- clean.prov("../prov/prov_example_4/prov.json", "test.csv")

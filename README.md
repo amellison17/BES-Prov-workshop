@@ -70,7 +70,8 @@ If your bringing a laptop (helpful, but not required), please ensure that your s
 8. Hands-on work (2)
     1. `/src/example_2a.R` introduces how to use provenance to assist with debugging
     2. `/src/example_2b.R` illustrates how provenance captures data types to assist with clean (*vs.* lazy) coding
-9. Participant examples?
+9a. Participant examples?
+9b. Alternate/if time: `/src/example_4.R` is a brief example of generating very clean code with `clean()` from *provClean*
 10. Recap/discussion of the value of provenance
 
 ### BioBreak

@@ -12,8 +12,8 @@ is.installed <- function(pkglist){
 
 #source files for loading prov libraries
 
-CRANlist <- c("rdtLite", "devtools", "provParseR", "provViz", "provSummarizeR") #packages on CRAN
-GITlist <- c("provGraphR", "provDebugR", "provExplainR") #packages on github
+CRANlist <- c("devtools", "provParseR", "provViz", "provSummarizeR") #packages on CRAN
+GITlist <- c("rdtLite", "provGraphR", "provDebugR", "provExplainR") #packages on github
 
 #(Install) and load libraries available on CRAN
 for(i in 1:length(CRANlist)) {
@@ -37,12 +37,6 @@ if(!is.installed("provClean")){
 require(provClean)
 
 #load packages for species occurrence analysis (example 3b)
-
-#8 December 2019
-#Updating rdtLite on the fly to deal with I/O errors with spocc
-remove.packages("rdtLite")
-install.packages("tarball/rdtLite_1.2.1.tar.gz")
-library(rdtLite)
 
 OCCList = c("spocc", "mapr") 
 

@@ -34,7 +34,7 @@
 		"rdt:p1": {
 			"rdt:name": "example_3b-0.R",
 			"rdt:type": "Start",
-			"rdt:elapsedTime": "0.62",
+			"rdt:elapsedTime": "0.63",
 			"rdt:scriptNum": "NA",
 			"rdt:startLine": "NA",
 			"rdt:startCol": "NA",
@@ -44,7 +44,7 @@
 		"rdt:p2": {
 			"rdt:name": "Polyergus <- occ(query=\"Polyergus lucidus\", from=\"gbif\",has_",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.44",
+			"rdt:elapsedTime": "0.56",
 			"rdt:scriptNum": 1,
 			"rdt:startLine": 5,
 			"rdt:startCol": 1,
@@ -54,7 +54,7 @@
 		"rdt:p3": {
 			"rdt:name": "Polyergus.df = data.frame(Polyergus$gbif$data$Polyergus_luci",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "11.34",
+			"rdt:elapsedTime": "18.88",
 			"rdt:scriptNum": 1,
 			"rdt:startLine": 7,
 			"rdt:startCol": 1,
@@ -64,7 +64,7 @@
 		"rdt:p4": {
 			"rdt:name": "worldmap <- map_data('world')",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "1.15",
+			"rdt:elapsedTime": "1.59",
 			"rdt:scriptNum": 1,
 			"rdt:startLine": 9,
 			"rdt:startCol": 1,
@@ -74,7 +74,7 @@
 		"rdt:p5": {
 			"rdt:name": "Polyergus.map <- \nggplot() +\n  geom_polygon(data=worldmap, f",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.27",
+			"rdt:elapsedTime": "0.33",
 			"rdt:scriptNum": 1,
 			"rdt:startLine": 11,
 			"rdt:startCol": 1,
@@ -84,7 +84,7 @@
 		"rdt:p6": {
 			"rdt:name": "ggsave(\"../graphics/Polyergus.png\")",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "2.62",
+			"rdt:elapsedTime": "2.85",
 			"rdt:scriptNum": 1,
 			"rdt:startLine": 17,
 			"rdt:startCol": 1,
@@ -94,7 +94,7 @@
 		"rdt:p7": {
 			"rdt:name": "example_3b-0.R",
 			"rdt:type": "Finish",
-			"rdt:elapsedTime": "0.01",
+			"rdt:elapsedTime": "0.0",
 			"rdt:scriptNum": "NA",
 			"rdt:startLine": "NA",
 			"rdt:startCol": "NA",
@@ -134,7 +134,7 @@
 			"rdt:scope": "undefined",
 			"rdt:fromEnv": false,
 			"rdt:hash": "eeef75dc784371d7b3e3a91734ba766a",
-			"rdt:timestamp": "2019-12-08T16.23.08EST",
+			"rdt:timestamp": "2019-12-10T06.27.01EST",
 			"rdt:location": "C:/Users/aellison/Documents/R/win-library/3.6/maps/mapdata/world.N"
 		},
 		"rdt:d4": {
@@ -166,20 +166,9 @@
 			"rdt:type": "File",
 			"rdt:scope": "undefined",
 			"rdt:fromEnv": false,
-			"rdt:hash": "8f731a76d9d8c45cbeeb098289dad8c5",
-			"rdt:timestamp": "2019-12-08T16.23.11EST",
+			"rdt:hash": "1dc37219b0574a2ad02a1e87059ff41f",
+			"rdt:timestamp": "2019-12-10T06.27.04EST",
 			"rdt:location": "C:/Users/aellison/Documents/GitHub/BES-Prov-workshop/graphics/Polyergus.png"
-		},
-		"rdt:d7": {
-			"rdt:name": "dev.off.7.pdf",
-			"rdt:value": "data/7-dev.off.7.pdf",
-			"rdt:valType": "{\"container\":\"vector\", \"dimension\":[1], \"type\":[\"character\"]}",
-			"rdt:type": "File",
-			"rdt:scope": "undefined",
-			"rdt:fromEnv": false,
-			"rdt:hash": "e4fcdcdfcfbfdd7f8da6eeaebd00b5d5",
-			"rdt:timestamp": "2019-12-08T16.23.11EST",
-			"rdt:location": "C:/Users/aellison/Documents/GitHub/BES-Prov-workshop/src/dev.off.7.pdf"
 		},
 
 		"rdt:environment": {
@@ -190,12 +179,12 @@
 			"rdt:langVersion": "R version 3.6.1 (2019-07-05)",
 			"rdt:script": "C:/Users/aellison/Documents/GitHub/BES-Prov-workshop/src/example_3b-0.R",
 			"rdt:scriptTimeStamp": "2019-12-08T16.22.01EST",
-			"rdt:totalElapsedTime": "16.45",
+			"rdt:totalElapsedTime": "24.84",
 			"rdt:sourcedScripts": "",
 			"rdt:sourcedScriptTimeStamps": "",
 			"rdt:workingDirectory": "C:/Users/aellison/Documents/GitHub/BES-Prov-workshop/src",
 			"rdt:provDirectory": "../prov/prov_example_3b-0",
-			"rdt:provTimestamp": "2019-12-08T16.22.52EST",
+			"rdt:provTimestamp": "2019-12-10T06.26.38EST",
 			"rdt:hashAlgorithm": "md5"
 		},
 
@@ -433,10 +422,6 @@
 		"rdt:pd5": {
 			"prov:activity": "rdt:p6",
 			"prov:entity": "rdt:d6"
-		},
-		"rdt:pd6": {
-			"prov:activity": "rdt:p7",
-			"prov:entity": "rdt:d7"
 		}
 	},
 
